@@ -16,7 +16,7 @@ return array(
 					'type' => 'html',
 					'name' => 'logo_font_preview',
 					'binding' => array(
-						'field'    => 'logo_font_face,logo_font_style,logo_font_weight,logo_font_size',
+						'field'    => 'logo_font_face,logo_font_style,logo_font_weight,logo_font_size,logo_line_height',
 						'function' => 'vp_font_preview',
 					),
 				),
@@ -75,7 +75,16 @@ return array(
 					'min'     => '5',
 					'max'     => '32',
 					'default' => '16',
-				)
+				),
+				array(
+					'type'    => 'slider',
+					'name'    => 'logo_line_height',
+					'label'   => __('Logo Line Height (em)', 'vp_textdomain'),
+					'min'     => '0',
+					'max'     => '3',
+					'default' => '1.5',
+					'step'    => '0.1',
+				),
 			),
 		),
 	),
