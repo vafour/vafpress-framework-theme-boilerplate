@@ -32,6 +32,7 @@ $tmpl_mb5  = get_template_directory() . '/admin/metabox/sample_5.php';
 $tmpl_mb6  = get_template_directory() . '/admin/metabox/sample_6.php';
 $tmpl_mb6  = get_template_directory() . '/admin/metabox/sample_6.php';
 $tmpl_mb7  = get_template_directory() . '/admin/metabox/sample_7.php';
+$tmpl_mb8  = get_template_directory() . '/admin/metabox/sample_8.php';
 
 // shortocode generators
 $tmpl_sg1  = get_template_directory() . '/admin/shortcode_generator/shortcodes1.php';
@@ -64,6 +65,7 @@ $mb4 = new VP_Metabox($tmpl_mb4);
 $mb5 = new VP_Metabox($tmpl_mb5);
 $mb6 = new VP_Metabox($tmpl_mb6);
 $mb7 = new VP_Metabox($tmpl_mb7);
+$mb8 = new VP_Metabox($tmpl_mb8);
 
 /**
  * Create instances of Shortcode Generator
