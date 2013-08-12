@@ -12,6 +12,11 @@ load_theme_textdomain('vp_textdomain', $lang_dir);
 require_once 'vafpress-framework/bootstrap.php';
 
 /**
+ * Include Custom Data Sources
+ */
+require_once 'admin/data_sources.php';
+
+/**
  * Load options, metaboxes, and shortcode generator array templates.
  */
 
