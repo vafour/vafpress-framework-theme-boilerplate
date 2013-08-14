@@ -190,10 +190,11 @@ function vp_bind_color_background($preset)
 
 function vp_font_preview($face, $style, $weight, $size, $line_height)
 {
-	$gwf  = new VP_Site_GoogleWebFont();
+	$gwf   = new VP_Site_GoogleWebFont();
 	$gwf->add($face, $style, $weight);
-	$link = reset($gwf->get_links());
-	$dom  = <<<EOD
+	$links = $gwf->get_links();
+	$link  = reset($links);
+	$dom   = <<<EOD
 <link href='$link' rel='stylesheet' type='text/css'>
 <p style="padding: 0 10px 0 10px; font-family: $face; font-style: $style; font-weight: $weight; font-size: {$size}px; line-height: {$line_height}em;">
 	Grumpy wizards make toxic brew for the evil Queen and Jack

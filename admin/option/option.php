@@ -814,7 +814,7 @@ return array(
 					'controls' => array(
 						array(
 							'type' => 'section',
-							'title' => __('Choose Font', 'vp_textdomain'),
+							'title' => __('What a Wonderful World', 'vp_textdomain'),
 							'fields' => array(
 								array(
 									'type' => 'select',
