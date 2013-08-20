@@ -2,7 +2,6 @@
 
 return array(
 	'title' => __('Vafpress Option Panel', 'vp_textdomain'),
-	'page' => __('Vafpress Menu', 'vp_textdomain'),
 	'logo' => '',
 	'menus' => array(
 		array(
