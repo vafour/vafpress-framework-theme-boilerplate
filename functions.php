@@ -3,8 +3,12 @@
 /**
  * Load Languages
  */
-$lang_dir = get_template_directory() . '/lang';
-load_theme_textdomain('vp_textdomain', $lang_dir);
+add_action('after_setup_theme', 'vp_tb_load_textdomain');
+
+function vp_tb_load_textdomain()
+{
+	load_theme_textdomain('vp_textdomain', get_template_directory() . '/lang/');
+}
 
 /**
  * Include Vafpress Framework
