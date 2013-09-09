@@ -1,10 +1,14 @@
 <?php
 
+VP_Security::instance()->whitelist_function('vp_copy_content');
+
 function vp_copy_content($value, $value2)
 {
 	$args = func_get_args();
 	return implode('', $args);
 }
+
+VP_Security::instance()->whitelist_function('vp_simple_shortcode');
 
 function vp_simple_shortcode($name = "", $url = "", $image = "")
 {
@@ -14,6 +18,8 @@ function vp_simple_shortcode($name = "", $url = "", $image = "")
 	$result = "[shortcode name='$name' url='$url' image='$image']";
 	return $result;
 }
+
+VP_Security::instance()->whitelist_function('vp_bind_bigcontinents');
 
 function vp_bind_bigcontinents()
 {
@@ -32,6 +38,8 @@ function vp_bind_bigcontinents()
 
 	return $result;
 }
+
+VP_Security::instance()->whitelist_function('vp_bind_continents');
 
 function vp_bind_continents($param = '')
 {
@@ -70,6 +78,8 @@ function vp_bind_continents($param = '')
 
 	return $result;
 }
+
+VP_Security::instance()->whitelist_function('vp_bind_countries');
 
 function vp_bind_countries($param = '')
 {
@@ -150,6 +160,8 @@ function vp_bind_countries($param = '')
 	return $result;
 }
 
+VP_Security::instance()->whitelist_function('vp_dep_is_keyword');
+
 function vp_dep_is_keyword($value)
 {
 	if($value === 'keyword')
@@ -157,12 +169,16 @@ function vp_dep_is_keyword($value)
 	return false;
 }
 
+VP_Security::instance()->whitelist_function('vp_dep_is_tags');
+
 function vp_dep_is_tags($value)
 {
 	if($value === 'tags')
 		return true;
 	return false;
 }
+
+VP_Security::instance()->whitelist_function('vp_bind_color_accent');
 
 function vp_bind_color_accent($preset)
 {
@@ -178,15 +194,21 @@ function vp_bind_color_accent($preset)
 	}
 }
 
+VP_Security::instance()->whitelist_function('vp_bind_color_subtle');
+
 function vp_bind_color_subtle($preset)
 {
 	return vp_bind_color_accent($preset);
 }
 
+VP_Security::instance()->whitelist_function('vp_bind_color_background');
+
 function vp_bind_color_background($preset)
 {
 	return vp_bind_color_accent($preset);
 }
+
+VP_Security::instance()->whitelist_function('vp_font_preview');
 
 function vp_font_preview($face, $style, $weight, $size, $line_height)
 {
