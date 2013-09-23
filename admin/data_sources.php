@@ -214,7 +214,7 @@ function vp_font_preview($face, $style, $weight, $size, $line_height)
 {
 	$gwf   = new VP_Site_GoogleWebFont();
 	$gwf->add($face, $style, $weight);
-	$links = $gwf->get_links();
+	$links = $gwf->get_font_links();
 	$link  = reset($links);
 	$dom   = <<<EOD
 <link href='$link' rel='stylesheet' type='text/css'>
