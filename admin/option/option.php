@@ -7,12 +7,12 @@ return array(
 		array(
 			'title' => __('Standard Controls', 'vp_textdomain'),
 			'name' => 'menu_1',
-			'icon' => 'font-awesome:icon-magic',
+			'icon' => 'font-awesome:fa-magic',
 			'menus' => array(
 				array(
 					'title' => __('Regular', 'vp_textdomain'),
 					'name' => 'submenu_1',
-					'icon' => 'font-awesome:icon-th-large',
+					'icon' => 'font-awesome:fa-th-large',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -216,7 +216,7 @@ return array(
 				array(
 					'title' => __('Image', 'vp_textdomain'),
 					'name' => 'submenu_2',
-					'icon' => 'font-awesome:icon-picture',
+					'icon' => 'font-awesome:fa-picture-o',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -555,7 +555,7 @@ return array(
 		array(
 			'title' => __('Special Controls', 'vp_textdomain'),
 			'name' => 'menu_2',
-			'icon' => 'font-awesome:icon-gift',
+			'icon' => 'font-awesome:fa-gift',
 			'controls' => array(
 				array(
 					'type' => 'section',
@@ -693,12 +693,12 @@ return array(
 		array(
 			'title' => __('Custom Data Source', 'vp_textdomain'),
 			'name' => 'menu_3',
-			'icon' => 'font-awesome:icon-th-list',
+			'icon' => 'font-awesome:fa-th-list',
 			'menus' => array(
 				array(
 					'title' => __('Dynamic', 'vp_textdomain'),
 					'name' => 'dynamic_data_source',
-					'icon' => 'font-awesome:icon-fire',
+					'icon' => 'font-awesome:fa-fire',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -809,7 +809,7 @@ return array(
 				array(
 					'title' => __('Binding', 'vp_textdomain'),
 					'name' => 'binding_data_source',
-					'icon' => 'font-awesome:icon-link',
+					'icon' => 'font-awesome:fa-link',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -869,12 +869,12 @@ return array(
 		array(
 			'title' => __('Fields Interactions', 'vp_textdomain'),
 			'name' => 'fields_interactions',
-			'icon' => 'font-awesome:icon-exchange',
+			'icon' => 'font-awesome:fa-exchange',
 			'menus' => array(
 				array(
 					'name' => 'binding_field',
 					'title' => __('Binding Field', 'vp_textdomain'),
-					'icon' => 'font-awesome:icon-retweet',
+					'icon' => 'font-awesome:fa-retweet',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -934,7 +934,7 @@ return array(
 				array(
 					'name' => 'dependent_field',
 					'title' => __('Dependent Field', 'vp_textdomain'),
-					'icon' => 'font-awesome:icon-key',
+					'icon' => 'font-awesome:fa-key',
 					'controls' => array(
 						array(
 							'type' => 'section',
@@ -1037,7 +1037,7 @@ return array(
 		array(
 			'title' => __('Advanced Usage', 'vp_textdomain'),
 			'name' => 'menu_adv',
-			'icon' => 'font-awesome:icon-cogs',
+			'icon' => 'font-awesome:fa-cogs',
 			'controls' => array(
 				array(
 					'type' => 'section',
@@ -1120,7 +1120,7 @@ return array(
 		array(
 			'name' => 'notebox',
 			'title' => __('Notebox', 'vp_textdomain'),
-			'icon' => 'font-awesome:icon-info-sign',
+			'icon' => 'font-awesome:fa-info-circle',
 			'controls' => array(
 				array(
 					'type' => 'notebox',
