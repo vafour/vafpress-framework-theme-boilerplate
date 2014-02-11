@@ -1005,6 +1005,21 @@ return array(
 										),
 									),
 								),
+								array(
+									'type' => 'multiselect',
+									'name' => 'dep_font_subset',
+									'label' => __('Font Subset', 'vp_textdomain'),
+									'items' => array(
+										'data' => array(
+											array(
+												'source' => 'binding',
+												'field' => 'dep_font_face',
+												'value' => 'vp_get_gwf_subset',
+											),
+										),
+									),
+									'default' => 'latin'
+								),
 							),
 						),
 						array(
@@ -1095,6 +1110,21 @@ return array(
 									),
 								),
 							),
+						),
+						array(
+							'type' => 'multiselect',
+							'name' => 'logo_font_subset',
+							'label' => __('Logo Font Subset', 'vp_textdomain'),
+							'items' => array(
+								'data' => array(
+									array(
+										'source' => 'binding',
+										'field' => 'logo_font_face',
+										'value' => 'vp_get_gwf_subset',
+									),
+								),
+							),
+							'default' => 'latin'
 						),
 						array(
 							'type'    => 'slider',

@@ -15,7 +15,7 @@ function vp_simple_shortcode($name = "", $url = "", $image = "")
 	if(is_null($name))  $name = '';
 	if(is_null($url))   $url = '';
 	if(is_null($image)) $image = '';
-	$result = "[shortcode name='$name' url='$url' image='$image']";
+	$result = '[shortcode name="'. $name . '" url="' . $url . '" image="' . $image . '"]';
 	return $result;
 }
 
